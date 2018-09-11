@@ -1,9 +1,10 @@
-x =input("Ingrese un segmento: \n")
-y =input("Ingrese un segmento: \n")
-z =input("Ingrese un segmento: \n")
-if (x+y)>z and (x+z)>y and (z+y)>x:
-    print(x+y+z)
-    if(x+y+z)>20:
+a = int(input("Ingrese un segmento: \n"))
+b = int(input("Ingrese un segmento: \n"))
+c = int(input("Ingrese un segmento: \n"))
+if ((a<(b+c)) and (a>(b-c)) and (b<(a+c)) and (b>(a-c)) and (c<(a+b)) and (c>(a-b))):
+    perimetro = a+b+c
+    print(perimetro)        
+    if perimetro>20:
         print("Es mayor")
     else:
         print("Es menor")
