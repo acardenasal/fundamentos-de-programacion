@@ -1,0 +1,11 @@
+x =input("Ingrese un segmento: \n")
+y =input("Ingrese un segmento: \n")
+z =input("Ingrese un segmento: \n")
+if (x+y)>z and (x+z)>y and (z+y)>x:
+    print(x+y+z)
+    if(x+y+z)>20:
+        print("Es mayor")
+    else:
+        print("Es menor")
+else:
+    print("No se puede")
