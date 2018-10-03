@@ -1,0 +1,10 @@
+def mcd(a, b):
+	resto = 0
+	while(b > 0):
+		resto = b
+		b = a % b
+		a = resto
+	return a
+num1 = int(input("Ingrese un numero entero \n"))
+num2 = int(input("Ingrese un numero entero \n"))
+print(mcd(num1, num2))
