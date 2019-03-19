@@ -1,0 +1,11 @@
+N=int(input("Ingrese un numero entero \n")) 
+M=int(input("Ingrese un numero entero \n"))
+if (N*M <= 700000):
+    x= 700000-(N*M)
+    if x>=100000:
+        print(x)
+    else:
+        print(round(x/2,1))
+else:
+    y=N-((700000/M))
+    print(int(y))
